@@ -1,2 +1,3 @@
 data_path: data/examples.csv
 model_path: model/model_params.joblib
+keywords_path: data/keywords.csv
