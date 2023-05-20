@@ -9,9 +9,9 @@ openai.api_key = os.getenv('OPENAI_API_KEY')
 
 response = openai.Completion.create(
   model="text-davinci-003",
-  prompt=f"Ponizej znajduja sie przyklady ogloszen. Napisz opis nowy podobny {file}",
-  temperature=0.25,
-  max_tokens=2000,
+  prompt=f"Ponizej znajduja sie przyklady ogloszen. Napisz takie nowe ogloszenie{file}",
+  temperature=0.15,
+  max_tokens=3000,
   top_p=1,
   frequency_penalty=0,
   presence_penalty=0

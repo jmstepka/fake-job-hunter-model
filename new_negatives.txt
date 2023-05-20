@@ -1,0 +1,6 @@
+[<OpenAIObject at 0x10c8c2d10> JSON: {
+  "finish_reason": "stop",
+  "index": 0,
+  "logprobs": null,
+  "text": "\n\nPoszukujemy pracownika na stanowisko ksi\u0119gowego. Wymagane s\u0105 do\u015bwiadczenie w ksi\u0119gowo\u015bci, znajomo\u015b\u0107 program\u00f3w ksi\u0119gowych oraz wykszta\u0142cenie kierunkowe. Osoba zatrudniona b\u0119dzie odpowiedzialna za prowadzenie ksi\u0105g rachunkowych, wystawianie faktur, rozliczanie podatk\u00f3w oraz wsparcie w innych zadaniach zwi\u0105zanych z ksi\u0119gowo\u015bci\u0105. Oczekujemy od kandydat\u00f3w dok\u0142adno\u015bci, zaanga\u017cowania i umiej\u0119tno\u015bci pracy w zespole. Oferujemy atrakcyjne wynagrodzenie oraz mo\u017cliwo\u015b\u0107 rozwoju zawodowego."
+}]
