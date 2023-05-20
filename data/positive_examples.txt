@@ -1,4 +1,3 @@
-********
 SAMODZIELNA KSIĘGOWA
 
 Twój zakres obowiązków
@@ -5007,6 +5006,7 @@ stabilność
 
 pracę na miejscu, bez delegacji
 ********
+<<<<<<< HEAD
 Firma DEMARKO Spółka Akcyjna działa nieprzerwanie od niemalże 25 lat na rynku Polskim i Zagranicznym. Jesteśmy dynamicznie rozwijającą się firmą, liderem branży obróbki stali i produkcji naczep specjalistycznych do transportu ciężkiego. W związku z prężnym rozwojem poszukujemy kandydatów do pracy na stanowisko:
 
 Operator CNC obróbka skrawaniem
@@ -10389,3 +10389,5 @@ Oferujemy
 -możliwości rozwoju zawodowego,
 
 -miejsce pracy Mogilno lub Toruń.
+=======
+>>>>>>> c7e858521d68d9003336350e32e83efc59ce2ff5

@@ -937,6 +937,7 @@ Brak wymaganego doświadczenia - rozpocznij od razu, niezależnie od swojego tł
 Możliwość rozwoju - zdobywaj nowe umiejętności i rozwijaj się zawodowo
 
 Nie trać czasu na dojazdy do pracy i ograniczenia tradycyjnego zatrudnienia. Z nami możesz pracować z dowolnego miejsca i tworzyć własną drogę do sukcesu. Zacznij zarabiać w trybie online już teraz!
+<<<<<<< HEAD
 
 ********
 
@@ -1539,3 +1540,5 @@ Zapraszamy serdecznie :))
 
 Pozdrawiam
 ********
+=======
+>>>>>>> c7e858521d68d9003336350e32e83efc59ce2ff5
