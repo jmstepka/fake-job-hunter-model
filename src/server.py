@@ -11,7 +11,7 @@ def classify():
         return jsonify({'error': 'Invalid input'}), 400
 
     predicted_classes = model.predict(descriptions)
-    return jsonify({'predicted_classes': predicted_classes})
+    return jsonify({'ratings': predicted_classes})
 
 if __name__ == '__main__':
     app.run(port=3000)

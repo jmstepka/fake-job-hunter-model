@@ -69,8 +69,8 @@ def predict(descriptions):
     model = joblib.load(config['model_path'])
 
     predictions = model.predict(data)
-
-    return list(predictions)
+    print(list(predictions))
+    return [float(pred) for pred in predictions]
 
 if __name__ == "__main__":
     create_and_save_model()
