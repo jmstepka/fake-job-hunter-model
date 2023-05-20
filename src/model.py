@@ -9,7 +9,7 @@ from sklearn.preprocessing import MinMaxScaler
 from sklearn.pipeline import make_pipeline
 from sklearn.model_selection import cross_val_score
 
-from joblib import dump, load
+import joblib
 
 def load_config():
     with open('src/config.yml', 'r') as f:
@@ -51,11 +51,26 @@ def create_and_save_model():
 
     classifier.fit(X, y)
 
-    dump(classifier, config['model_path'])
+    joblib.dump(classifier, config['model_path'])
 
-#def prepare_data_for_prediction(descriptions)
+def prepare_data_for_prediction(descriptions):
+    nlp = spacy.load('pl_core_news_md')
 
-#def predict(descriptions):
+    vectors = np.array([nlp(desc).vector for desc in descriptions])
+    
+    return vectors
+
+
+def predict(descriptions):
+    config = load_config()
+
+    data = prepare_data_for_prediction(descriptions)
+
+    model = joblib.load(config['model_path'])
+
+    predictions = model.predict(data)
+
+    return list(predictions)
 
 if __name__ == "__main__":
     create_and_save_model()
