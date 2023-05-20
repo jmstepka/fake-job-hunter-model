@@ -19,7 +19,6 @@ numpy==1.24.3
 packaging==23.1
 pandas==2.0.1
 pathy==0.10.1
-pl-core-news-lg @ https://github.com/explosion/spacy-models/releases/download/pl_core_news_lg-3.5.0/pl_core_news_lg-3.5.0-py3-none-any.whl#sha256=2f85a9e408d00886e42de84246e072e7d8d98bfcc032a76769cb33d89720fe5f
 pl-core-news-md @ https://github.com/explosion/spacy-models/releases/download/pl_core_news_md-3.5.0/pl_core_news_md-3.5.0-py3-none-any.whl#sha256=bb6eead5f1831eb40f56a38d79ec448c26d97263ad8648a8ea8bf941c088385b
 preshed==3.0.8
 pydantic==1.10.7
