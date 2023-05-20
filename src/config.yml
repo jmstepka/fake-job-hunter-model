@@ -1,3 +1,4 @@
 data_path: data/examples.csv
 model_path: model/model_params.joblib
 keywords_path: data/keywords.csv
+annotated_data_path: data/annotated_data.csv

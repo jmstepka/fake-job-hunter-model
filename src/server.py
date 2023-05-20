@@ -13,9 +13,17 @@ def classify():
 
     predicted_classes = model.predict(descriptions)
     keyword_counts = keyword_analysis.process_description(descriptions)
-    print(list(keyword_counts[0].keys()))
-    # return jsonify([{'rating': pred, 'counts': counts} for pred, counts in zip(predicted_classes, keyword_counts)])
+
     return [{'rating': pred, 'counts': counts} for pred, counts in zip(predicted_classes, keyword_counts)]
+
+@app.route('/retrain', methods=['POST'])
+def retrain():
+    data = request.get_json()
+    if data is None or not isinstance(data, list):
+        return jsonify({'error': 'Invalid input'}), 400
+    
+    accuracy = model.save_new_data_and_train(data)
+    return {"accuracy": accuracy}
 
 if __name__ == '__main__':
     app.run(port=3000)
