@@ -4,13 +4,14 @@ import openai
 load_dotenv()
 
 file = open("/Users/gabrielalibudzka/Desktop/fake-job-hunter-model/data/negative_examples.txt")
+filep = open("/Users/gabrielalibudzka/Desktop/fake-job-hunter-model/data/positive_examples.txt")
 question = f"Ponizej znajduja sie przyklady podejrzanych ogloszen o prace. Napisz opis podobnego ogloszenia {file}"
 openai.api_key = os.getenv('OPENAI_API_KEY')
 
 response = openai.Completion.create(
   model="text-davinci-003",
-  prompt=f"Ponizej znajduja sie przyklady ogloszen. Napisz takie nowe ogloszenie{file}",
-  temperature=0.15,
+  prompt=f"Ponizej znajduja sie przyklady ogloszen. Na podstawie tych ogloszen wygeneruj mi slowa klucze ktore wystepuja tu {file} a NIE WYSTEPUJA W TYCH OGLOSZENIACH {filep}",
+  temperature=0.35,
   max_tokens=3000,
   top_p=1,
   frequency_penalty=0,
@@ -23,7 +24,7 @@ response = openai.Completion.create(
 #                      {"role": "user", "content": "Wygeneruj ogloszenie o prace, ktore brzmi podejrzanie - jak praca idealna dla kazdego ale glupia osoba sie na to nabierze"},
 #                      {"role": "assistant", "content": f"Oto przyklady takich ogloszen {file}"},
 #                      {"role": "user", "content": "podaj kolejny przyklad podobny do tych podanych przykladow, ktore bedzie podobnie dlugie do poprzednich"}])
-file_path = 'new_negatives.txt'
+file_path = 'key-words2.txt'
 file = open(file_path, 'w')
 desired_content = response['choices']  # Replace 'attribute_name' with the appropriate attribute
 converted_content = str(desired_content)
