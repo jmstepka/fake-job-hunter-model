@@ -1,0 +1,6 @@
+[<OpenAIObject at 0x10b2db950> JSON: {
+  "finish_reason": "stop",
+  "index": 0,
+  "logprobs": null,
+  "text": "\n\nPoszukujemy energicznego i zmotywowanego kandydata do pracy w naszym biurze. Osoba ta b\u0119dzie odpowiedzialna za wykonywanie wielu r\u00f3\u017cnych zada\u0144, w tym przygotowywanie dokumentacji, wsparcie administracyjne i wsparcie w zarz\u0105dzaniu projektami. Oczekujemy, \u017ce kandydat b\u0119dzie posiada\u0142 wykszta\u0142cenie wy\u017csze, do\u015bwiadczenie w pracy biurowej i umiej\u0119tno\u015b\u0107 pracy w zespole. Kandydat powinien by\u0107 r\u00f3wnie\u017c zorientowany na klienta, zdyscyplinowany i wykazywa\u0107 inicjatyw\u0119. Mile widziane jest r\u00f3wnie\u017c do\u015bwiadczenie w pracy z systemami informatycznymi. Oferujemy konkurencyjne wynagrodzenie i mo\u017cliwo\u015b\u0107 rozwoju. Je\u015bli jeste\u015b zainteresowany, wy\u015blij swoje CV i list motywacyjny na adres e-mail wskazany w og\u0142oszeniu."
+}]

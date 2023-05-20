@@ -1,0 +1,6 @@
+[<OpenAIObject at 0x110ce78b0> JSON: {
+  "finish_reason": "stop",
+  "index": 0,
+  "logprobs": null,
+  "text": "\n2 Poszukujemy osoby z do\u015bwiadczeniem do wykonywania zada\u0144 biurowych z domu.\n3 Szukamy osoby, kt\u00f3ra b\u0119dzie nadzorowa\u0107 program narz\u0119dzi administracyjnych.\n4 Pracownika/pracownik\u00f3w sztabu maj\u0105cych do\u015bwiadczenie w handlu detalicznym i internetowym.\n5 Poszukujemy osoby do pracy na stanowisku sprzedawcy marketingu internetowego.\n\n6 Szukamy programisty z do\u015bwiadczeniem w kodowaniu aplikacji mobilnych."
+}]
