@@ -4,7 +4,7 @@ import spacy
 import logging
 import yaml
 
-from sklearn.naive_bayes import MultinomialNB
+from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.pipeline import make_pipeline
 from sklearn.model_selection import cross_val_score
@@ -43,7 +43,7 @@ def create_and_save_model():
     X, y = prepare_data_for_training(data)
 
     classifier = make_pipeline(MinMaxScaler(),
-                               MultinomialNB())
+                               LogisticRegression())
 
     report_accuracy(X, y, classifier)
 
@@ -66,8 +66,8 @@ def predict(descriptions):
 
     model = joblib.load(config['model_path'])
 
-    predictions = model.predict(data)
-    return [float(pred) for pred in predictions]
+    predictions = model.predict_proba(data)
+    return [float(pred[1]) for pred in predictions]
 
 if __name__ == "__main__":
     create_and_save_model()
