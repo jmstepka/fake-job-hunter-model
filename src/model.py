@@ -33,7 +33,7 @@ def report_accuracy(X, y, clf, cv_num=5):
     
     score = cross_val_score(clf, X, y, cv=cv_num)
 
-    logging.info(f'CrossVal accuracy score: {score}')
+    print(score)
 
 
 def create_and_save_model():
