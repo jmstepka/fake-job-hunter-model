@@ -14,7 +14,6 @@ import joblib
 def load_config():
     with open('src/config.yml', 'r') as f:
         config = yaml.safe_load(f)
-    print(config)
     return config
 
 
@@ -33,7 +32,6 @@ def prepare_data_for_training(data):
 def report_accuracy(X, y, clf, cv_num=5):
     
     score = cross_val_score(clf, X, y, cv=cv_num)
-    print(score)
 
     logging.info(f'CrossVal accuracy score: {score}')
 
@@ -69,7 +67,6 @@ def predict(descriptions):
     model = joblib.load(config['model_path'])
 
     predictions = model.predict(data)
-    print(list(predictions))
     return [float(pred) for pred in predictions]
 
 if __name__ == "__main__":
