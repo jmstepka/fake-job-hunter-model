@@ -26,4 +26,4 @@ def retrain():
     return {"accuracy": accuracy}
 
 if __name__ == '__main__':
-    app.run(port=3000)
+    app.run(port=4200)
