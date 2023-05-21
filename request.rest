@@ -1,6 +1,0 @@
-POST http://127.0.0.1:3000/classify
-content-type: application/json
-
-{
-    "descriptions": ["Dzień dobry, zapłacę za założenia kont"]
-}
