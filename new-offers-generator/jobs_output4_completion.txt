@@ -1,8 +1,0 @@
-[<OpenAIObject at 0x111e86a90> JSON: {
-  "finish_reason": "stop",
-  "index": 0,
-  "message": {
-    "content": "Oto kolejny przyk\u0142ad podejrzanego og\u0142oszenia pracy:\n\nStawka godzinowa: $100\nPoszukujemy os\u00f3b bez do\u015bwiadczenia do pomocy przy organizacji imprez masowych. Praca jest bardzo przyjemna i polega na rozmieszczaniu dekoracji oraz serwowaniu jedzenia i napoj\u00f3w. Wszystkiego nauczysz si\u0119 na miejscu, wi\u0119c brak do\u015bwiadczenia nie stanowi problemu. Oferujemy elastyczny czas pracy i niesamowit\u0105 atmosfer\u0119. Nie czekaj, zg\u0142o\u015b si\u0119 ju\u017c dzisiaj i zosta\u0144 naszym nowym pracownikiem!",
-    "role": "assistant"
-  }
-}]
